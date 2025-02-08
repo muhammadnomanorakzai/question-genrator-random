@@ -1,0 +1,86 @@
+/* .logo-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+/* Logo styling */
+/* Logo container */
+.logo.right-logo {
+  display: inline-block; /* Ensure the container wraps the image */
+  overflow: hidden; /* Hide overflow for smooth animations */
+ 
+  border-radius: 50%; /* Circular shape */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+/* Logo image */
+.logo.right-logo img {
+  height: 210px; /* Adjust size as needed */
+  width: 250px; /* Ensure it's square for a perfect circle */
+  border-radius: 50%; /* Circular shape */
+  display: block; /* Remove extra space below the image */
+  transition: transform 0.5s ease, filter 0.5s ease; /* Smooth transitions */
+  display: flex;
+  justify-content: flex-end;
+}
+.logo.left-logo {
+ 
+  display: inline-block; /* Ensure the container wraps the image */
+  overflow: hidden; /* Hide overflow for smooth animations */
+  border-radius: 50%; /* Circular shape */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+/* Logo image */
+.logo.left-logo img {
+  height: 210px; /* Adjust size as needed */
+  width: 250px; /* Ensure it's square for a perfect circle */
+  border-radius: 50%; /* Circular shape */
+  display: block; /* Remove extra space below the image */
+  transition: transform 0.5s ease, filter 0.5s ease; /* Smooth transitions */
+  display: flex;
+  justify-content: flex-start;
+}
+
+
+
+/* Hover effect on the logo container */
+.logo.right-logo:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+/* Hover effect on the logo image */
+.logo.right-logo:hover img {
+  transform: rotate(360deg); /* Rotate the image on hover */
+  filter: brightness(1.2) contrast(1.2); /* Brighten and enhance contrast */
+}
+.logo.left-logo:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+/* Hover effect on the logo image */
+.logo.left-logo:hover img {
+  transform: rotate(360deg); /* Rotate the image on hover */
+  filter: brightness(1.2) contrast(1.2); /* Brighten and enhance contrast */
+}
+
+/* Animation for continuous rotation (optional) */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Add continuous rotation animation */
+.logo.right-logo.spin img {
+  animation: spin 5s linear infinite; /* Rotate continuously */
+}
+/* Your existing container styling */

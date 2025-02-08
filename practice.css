@@ -1,0 +1,9 @@
+body{
+    background-color: bisque;
+}
+
+.rounded{
+    width: 200px;
+    display: flex;
+    justify-content: center;
+}
